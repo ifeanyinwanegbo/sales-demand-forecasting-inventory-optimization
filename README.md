@@ -74,6 +74,29 @@ The forecasting pipeline was evaluated using a **time-based train–test split**
 - **Sales Forecast (ARIMA Baseline)**  
   Illustrates trend-based forecasting with higher error during periods of rapid change.
 
+  ---
+
+## 💻 Code
+
+The project is implemented using a modular, production-style pipeline. Key scripts include:
+
+- **Data Ingestion**  
+  [`generate_sales_data.py`](src/ingestion/generate_sales_data.py)  
+  Generates or loads raw daily sales data used as pipeline input.
+
+- **Data Processing / Feature Engineering**  
+  [`clean_sales_data.py`](src/processing/clean_sales_data.py)  
+  Cleans raw data, handles missing values, and engineers time-based and lag features.
+
+- **Forecasting & Analytics**  
+  [`forecast_sales.py`](src/analytics/forecast_sales.py)  
+  Trains baseline forecasting models (Linear Regression and ARIMA), evaluates performance (MAE, RMSE, MAPE), and generates plots.
+
+- **Pipeline Orchestration**  
+  [`run_pipeline.py`](src/run_pipeline.py)  
+  Runs the full end-to-end workflow: ingestion → processing → forecasting → output generation.
+
+
 ### 📈 Model Visualizations
 
 **Actual vs Predicted (Linear Regression)**  
