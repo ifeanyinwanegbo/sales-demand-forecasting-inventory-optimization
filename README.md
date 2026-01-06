@@ -114,7 +114,7 @@ The project is implemented using a modular, production-style pipeline. Key scrip
   - More reliable replenishment planning
 
 
-## 📂 Project Structure
+## 📁 Project Structure
 ```text
 sales-demand-forecasting-inventory-optimization/
 ├── data/
@@ -122,6 +122,8 @@ sales-demand-forecasting-inventory-optimization/
 │   │   └── sales_data.csv
 │   └── processed/
 │       └── sales_features.csv
+├── docs/
+│   └── results_summary.md
 ├── images/
 │   ├── actual_vs_pred.png
 │   └── forecast_plot.png
