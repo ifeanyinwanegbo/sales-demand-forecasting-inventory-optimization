@@ -32,7 +32,7 @@ This document summarizes the final outputs, model performance metrics, and gener
 - **Sales Forecast (ARIMA Baseline)**  
   [`images/forecast_plot.png`](../images/forecast_plot.png)
 
-## 📊 Dataset Overview
+##  Dataset Overview
 
 - **Time Range:** Multi-year daily sales data
 - **Target Variable:** `sales_units`
